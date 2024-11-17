@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portefeuille - DreamSolution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Votre Portefeuille</h1>
+    <div id="wallet-info">
+        <p>Solde actuel : <span id="balance">0 CFA</span></p>
+        <p>Total retiré : <span id="total-withdrawn">0 CFA</span></p>
+        <p>Gains totaux : <span id="total-gains">0 CFA</span></p>
+    </div>
+    <div>
+        <button onclick="rechargeWallet()">Recharger</button>
+        <button onclick="requestWithdrawal()">Retirer</button>
+    </div>
+    <div id="active-products">
+        <h2>Produits Actifs</h2>
+        <ul id="product-list"></ul>
+    </div>
+    <a href="products.html">Acheter des produits</a>
+</body>
+<script src="script.js"></script>
+</html>

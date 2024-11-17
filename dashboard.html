@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord - DreamSolution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenue sur DreamSolution</h1>
+    <div id="notification">
+        <p class="warning">
+            <strong>Attention :</strong> Tout investissement comporte des risques. Investissez prudemment et ne prenez pas de risques démesurés. 
+        </p>
+        <p class="critical">
+            <strong>Important :</strong> Votre compte pourrait être perdu si vous supprimez le cache de votre navigateur. Sauvegardez vos informations.
+        </p>
+    </div>
+    <div id="wallet">
+        <p>Solde actuel : <span id="balance">0 CFA</span></p>
+        <button onclick="addFunds()">Recharger</button>
+        <button onclick="withdrawFunds()">Retirer</button>
+    </div>
+    <button onclick="redirectTo('assistance.html')">Assistance</button>
+</body>
+<script src="script.js"></script>
+</html>
